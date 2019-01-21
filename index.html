@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link href="ii/css/project_name/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);  })(window,document,'script', 'dataLayer','GTM-M569KV');</script>
+    <script src="https://vk.com/js/api/openapi.js?144"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-M569KV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script type="text/javascript">(function (d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter6936841 = new Ya.Metrika({id:6936841,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,ecommerce:"dataLayer"});} catch(e) { }});var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function () { n.parentNode.insertBefore(s, n); };s.type = "text/javascript";s.async = true;s.src = "https://mc.yandex.ru/metrika/watch.js";if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); }})(document, window, "yandex_metrika_callbacks");</script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/6936841" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+    <script>
+      VK.Retargeting.Init('VK-RTRG-645-i8bUm');
+      VK.Retargeting.Hit();
+      
+    </script>
+   <div class="container">
+    <form id="want-work-anketa" name="Anketa" action="" method="POST" enctype="multipart/form-data">
+
+        <h1 class="color_blue">Хотите у нас работать?</h1>
+
+        <div class="anketa-form">
+            <p class="anktext">Пожалуйста, заполните приведенные ниже поля нашей анкеты.</p>
+
+            <p class="anktext">Поля, отмеченные звездочкой (*), обязательны для заполнения.</p>
+
+            <h3 class="color_blue fs_5">Представьтесь:</h3>
+
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-surname"
+                       name="surname"
+                       value=""
+                       required
+                       tabindex="1">
+                <label class="input-new__label {{ user.surname ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-surname">Фамилия*</label>
+            </div>
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-name"
+                       name="name"
+                       value=""
+                       required
+                       tabindex="2">
+                <label class="input-new__label {{ user.surname ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-name">Имя*</label>
+            </div>
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-second_name"
+                       name="second_name"
+                       value=""
+                       tabindex="3">
+                <label class="input-new__label {{ user.second_name ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-second_name">Отчество</label>
+            </div>
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-birthday"
+                       name="birthday"
+                       value=""
+                       tabindex="3">
+                <label class="input-new__label {{ user.birthday ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-birthday">Дата рождения</label>
+            </div>
+
+
+            <h3 class="color_blue fs_5">Пожелания к будущей работе:</h3>
+
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-position"
+                       name="position"
+                       value=""
+                       tabindex="4">
+                <label class="input-new__label {{ user.position ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-position">Интересующая должность</label>
+            </div>
+
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-wages"
+                       name="wages"
+                       value=""
+                       tabindex="5">
+                <label class="input-new__label {{ user.wages ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-wages">Желаемый уровень заработной платы</label>
+            </div>
+
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-schedule"
+                       name="schedule"
+                       value=""
+                       tabindex="6">
+                <label class="input-new__label {{ user.schedule ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-schedule">График работы </label>
+            </div>
+
+
+            <h3 class="color_blue fs_5 mt_4">Ваше образование</h3>
+
+            <div class="anktext fs_3 mb_2">Образование (дата поступления, дата окончания, название учебного заведения, специальность по диплому, форма обучения)</div>
+            <textarea class="inputtextarea fs_3" name="education" tabindex="7"></textarea>
+
+            <div class="anktext fs_3 mt_4 mb_2">Дополнительное образование (курсы, семинары, тренинги, стажировки и т.д.)</div>
+            <textarea class="inputtextarea fs_3" name="courses" tabindex="8"></textarea>
+
+
+            <h3 class="color_blue fs_5 mt_4">Опыт работы:</h3>
+
+            <div class="anktext fs_3 mb_2">Укажите места работы, начиная с последнего, включая договора и собственный бизнес (название компании, дата поступления, дата увольнения, сфера деятельности компании, должность, выполняемые обязанности, причина увольнения)</div>
+            <textarea class="inputtextarea fs_3" name="workplace" tabindex="9"></textarea>
+
+
+            <h3 class="color_blue fs_5 mt_4">Навыки и личные качества:</h3>
+
+            <div class="anktext fs_3 mb_2">Опыт работы с компьютером: указать название программ и рядом в скобках степень владения по четырех бальной шкале (4-эксперт, 3-опытный пользователь, 2-средний, 1-начальный)</div>
+            <textarea class="inputtextarea fs_3" name="skills" tabindex="10"></textarea>
+
+            <div class="anktext fs_3 mt_4 mb_2">Личные качества, достижения</div>
+            <textarea class="inputtextarea fs_3" name="characteristic" tabindex="11"></textarea>
+
+
+            <h3 class="color_blue fs_5 mt_4">Место проживания:</h3>
+
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-registration"
+                       name="registration"
+                       value=""
+                       tabindex="12"
+                       required>
+                <label class="input-new__label {{ user.registration ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-registration">Место постоянной регистрации*</label>
+                <div class="message message_margin">(город, улица, дом) </div>
+            </div>
+
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-location"
+                       name="location"
+                       value=""
+                       tabindex="13">
+                <label class="input-new__label {{ user.location ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-location">Фактическое место жительства</label>
+                <div class="message">(город, улица, дом) </div>
+
+            </div>
+
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-station"
+                       name="station"
+                       value=""
+                       tabindex="14">
+                <label class="input-new__label {{ user.station ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-station">Ближайшая станция метро</label>
+            </div>
+
+
+            <h3 class="color_blue fs_5 ">Контактная информация:</h3>
+
+            <div class="anktext fs_3 mb_2">Домашний телефон, мобильный, рабочий.*&nbsp;
+                <br>
+                Укажите удобное для Вас время звонка.</div>
+            <div >
+                <textarea class="inputtextarea fs_3" name="phone" tabindex="15" required></textarea>
+            </div>
+
+            <div class="input-new">
+                <input class="input-new__input"
+                       type="text"
+                       id="js__want-work-anketa-email"
+                       name="email"
+                       required
+                       tabindex="16"
+                       value=""
+                       data-validation-type="email">
+                <label class="input-new__label {{ user.email ? 'input-new__label_active' : '' }}"
+                       for="js__want-work-anketa-email">E-mail*</label>
+            </div>
+
+
+             <input type="submit" class="btn_large" name="web_form_submit" value="Отправить">
+            <!--<div class="btn_large js__send" data-url="" onclick="events.anketa.finish()">Отправить-->
+            <!--</div>-->
+        </div>
+    </form>
+</div>
+    <script src="ii/js/project_name/script.js" type="text/javascript"></script>
+  </body>
+</html>
