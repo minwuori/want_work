@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic');
+
+
 * {
   margin: 0;
   padding: 0; }
 
 body {
+  font-family: Roboto;
   font-size: 16px; }
 
 .container {
@@ -16,6 +20,7 @@ body {
 
 .color_red {
   color: red; }
+ 
 
 input.btn_large {
   border: none; }
@@ -507,6 +512,8 @@ p.input__error {
   transition: .3s; }
 
 .input-new__input:focus {
+  border-style: none;
+  border-bottom: solid;
   border-color: #26a9e0;
   -webkit-box-shadow: 0 1px 0 0 #26a9e0,0 -1px 0 0 #fff,1px -1px 0 0 #fff,-1px -1px 0 0 #fff;
           box-shadow: 0 1px 0 0 #26a9e0,0 -1px 0 0 #fff,1px -1px 0 0 #fff,-1px -1px 0 0 #fff;
@@ -1015,3 +1022,8 @@ img[src*='vk.com'] {
 /* END FIXES */
 .hidden {
   display: none; }
+
+input:focus {
+  border: none;
+  outline: none;
+}
