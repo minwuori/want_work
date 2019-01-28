@@ -130,8 +130,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 email: {
                     required: 'Это поле должно быть заполнено'
+                },
+                eighteen: {
+                    required: 'Это поле обязательно'
                 }
             },
+
+            submitHandler: function(form) {
+               $('form').css({ "display": "none" });
+               $('.want-work-anketa__text').css({ "display": "flex" });
+            }
 
         });
 

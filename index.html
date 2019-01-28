@@ -29,14 +29,13 @@
    <div class="container">
     <form id="want-work-anketa" name="Anketa" action="" method="POST" enctype="multipart/form-data">
 
-        <h1 class="color_blue mb_3">Хотите у нас работать?</h1>
+        <h1 class="color_blue">Хотите у нас работать?</h1>
 
         <div class="anketa-form">
-            <p class="anktext">Пожалуйста, заполните приведенные ниже поля нашей анкеты.</p>
 
-            <p class="anktext">Поля, отмеченные звездочкой (*), обязательны для заполнения.</p>
+            <h3 class="color_blue fs_5">Расскажите о себе:</h3>
+            <p class="anktext fs_2 mb_4 mt_1">Поля, отмеченные звездочкой (*), обязательны для заполнения.</p>
 
-            <h3 class="color_blue fs_5 mt_2">Представьтесь:</h3>
 
             <div class="input-new">
                 <input class="input-new__input"
@@ -46,7 +45,7 @@
                        value=""
                        required
                        tabindex="1">
-                <label class="input-new__label {{ user.surname ? 'input-new__label_active' : '' }}"
+                <label class="input-new__label"
                        for="js__want-work-anketa-surname">Фамилия*</label>
             </div>
             <div class="input-new">
@@ -57,7 +56,7 @@
                        value=""
                        required
                        tabindex="2">
-                <label class="input-new__label {{ user.surname ? 'input-new__label_active' : '' }}"
+                <label class="input-new__label"
                        for="js__want-work-anketa-name">Имя*</label>
             </div>
             <div class="input-new">
@@ -67,7 +66,7 @@
                        name="second_name"
                        value=""
                        tabindex="3">
-                <label class="input-new__label {{ user.second_name ? 'input-new__label_active' : '' }}"
+                <label class="input-new__label"
                        for="js__want-work-anketa-second_name">Отчество</label>
             </div>
             <div class="input-new">
@@ -76,8 +75,8 @@
                        id="js__want-work-anketa-birthday"
                        name="birthday"
                        value=""
-                       tabindex="3">
-                <label class="input-new__label {{ user.birthday ? 'input-new__label_active' : '' }}"
+                       tabindex="4">
+                <label class="input-new__label"
                        for="js__want-work-anketa-birthday">Дата рождения</label>
             </div>
 
@@ -90,8 +89,8 @@
                        id="js__want-work-anketa-position"
                        name="position"
                        value=""
-                       tabindex="4">
-                <label class="input-new__label {{ user.position ? 'input-new__label_active' : '' }}"
+                       tabindex="5">
+                <label class="input-new__label"
                        for="js__want-work-anketa-position">Интересующая должность</label>
             </div>
 
@@ -101,9 +100,9 @@
                        id="js__want-work-anketa-wages"
                        name="wages"
                        value=""
-                       tabindex="5">
-                <label class="input-new__label {{ user.wages ? 'input-new__label_active' : '' }}"
-                       for="js__want-work-anketa-wages">Желаемый уровень заработной платы</label>
+                       tabindex="6">
+                <label class="input-new__label"
+                       for="js__want-work-anketa-wages">Желаемый уровень зарплаты</label>
             </div>
 
             <div class="input-new">
@@ -112,34 +111,34 @@
                        id="js__want-work-anketa-schedule"
                        name="schedule"
                        value=""
-                       tabindex="6">
-                <label class="input-new__label {{ user.schedule ? 'input-new__label_active' : '' }}"
+                       tabindex="7">
+                <label class="input-new__label"
                        for="js__want-work-anketa-schedule">График работы </label>
             </div>
 
 
-            <h3 class="color_blue fs_5 mt_4">Ваше образование</h3>
+            <h3 class="color_blue fs_5 mt_4">Образование</h3>
 
-            <div class="anktext fs_3 mb_2">Образование (дата поступления, дата окончания, название учебного заведения, специальность по диплому, форма обучения)</div>
-            <textarea class="inputtextarea fs_3" name="education" tabindex="7"></textarea>
+            <div class="anktext fs_3 mb_2">Основное образование (даты поступления и окончания учёбы, название учебного заведения, специальность по диплому, форма обучения)</div>
+            <textarea class="inputtextarea fs_3" name="education" tabindex="8"></textarea>
 
             <div class="anktext fs_3 mt_4 mb_2">Дополнительное образование (курсы, семинары, тренинги, стажировки и т.д.)</div>
-            <textarea class="inputtextarea fs_3" name="courses" tabindex="8"></textarea>
+            <textarea class="inputtextarea fs_3" name="courses" tabindex="9"></textarea>
 
 
             <h3 class="color_blue fs_5 mt_4">Опыт работы:</h3>
 
-            <div class="anktext fs_3 mb_2">Укажите места работы, начиная с последнего, включая договора и собственный бизнес (название компании, дата поступления, дата увольнения, сфера деятельности компании, должность, выполняемые обязанности, причина увольнения)</div>
-            <textarea class="inputtextarea fs_3" name="workplace" tabindex="9"></textarea>
+            <div class="anktext fs_3 mb_2">Укажите места работы, начиная с последнего: название компании, сфера её деятельности, дата поступления и увольнения, ваши обязанности, причина увольнения. Не забудьте про работу по договору и собственный бизнес.</div>
+            <textarea class="inputtextarea fs_3" name="workplace" tabindex="10"></textarea>
 
 
             <h3 class="color_blue fs_5 mt_4">Навыки и личные качества:</h3>
 
-            <div class="anktext fs_3 mb_2">Опыт работы с компьютером: указать название программ и рядом в скобках степень владения по четырех бальной шкале (4-эксперт, 3-опытный пользователь, 2-средний, 1-начальный)</div>
-            <textarea class="inputtextarea fs_3" name="skills" tabindex="10"></textarea>
+            <div class="anktext fs_3 mb_2">Навыки. Когда будете писать об опыте работы с компьютером, укажите название программ и рядом в скобках степень владения по шкале от 1 до 4 (4 – эксперт, 3 – опытный пользователь, 2 – средний, 1 – новичок). </div>
+            <textarea class="inputtextarea fs_3" name="skills" tabindex="11"></textarea>
 
             <div class="anktext fs_3 mt_4 mb_2">Личные качества, достижения</div>
-            <textarea class="inputtextarea fs_3" name="characteristic" tabindex="11"></textarea>
+            <textarea class="inputtextarea fs_3" name="characteristic" tabindex="12"></textarea>
 
 
             <h3 class="color_blue fs_5 mt_4">Место проживания:</h3>
@@ -150,10 +149,10 @@
                        id="js__want-work-anketa-registration"
                        name="registration"
                        value=""
-                       tabindex="12"
+                       tabindex="13"
                        required>
-                <label class="input-new__label {{ user.registration ? 'input-new__label_active' : '' }}"
-                       for="js__want-work-anketa-registration">Место постоянной регистрации*</label>
+                <label class="input-new__label"
+                       for="js__want-work-anketa-registration">Адрес по прописке*</label>
                 <div class="message message_margin">(город, улица, дом) </div>
             </div>
 
@@ -163,9 +162,9 @@
                        id="js__want-work-anketa-location"
                        name="location"
                        value=""
-                       tabindex="13">
-                <label class="input-new__label {{ user.location ? 'input-new__label_active' : '' }}"
-                       for="js__want-work-anketa-location">Фактическое место жительства</label>
+                       tabindex="14">
+                <label class="input-new__label"
+                       for="js__want-work-anketa-location">Фактический адрес</label>
                 <div class="message">(город, улица, дом) </div>
 
             </div>
@@ -176,17 +175,15 @@
                        id="js__want-work-anketa-station"
                        name="station"
                        value=""
-                       tabindex="14">
-                <label class="input-new__label {{ user.station ? 'input-new__label_active' : '' }}"
+                       tabindex="15">
+                <label class="input-new__label"
                        for="js__want-work-anketa-station">Ближайшая станция метро</label>
             </div>
 
 
-            <h3 class="color_blue fs_5 ">Контактная информация:</h3>
+            <h3 class="color_blue fs_5 ">Контакты:</h3>
 
-            <div class="anktext fs_3 mb_2">Домашний телефон, мобильный, рабочий.*&nbsp;
-                <br>
-                Укажите удобное для Вас время звонка.</div>
+            <div class="anktext fs_3 mb_2">Мобильный, домашний или рабочий телефон. Укажите удобное для вас время звонка.*</div>
             <div >
                 <textarea class="inputtextarea fs_3" name="phone" tabindex="15" required></textarea>
             </div>
@@ -200,16 +197,27 @@
                        tabindex="16"
                        value=""
                        data-validation-type="email">
-                <label class="input-new__label {{ user.email ? 'input-new__label_active' : '' }}"
+                <label class="input-new__label"
                        for="js__want-work-anketa-email">E-mail*</label>
             </div>
 
+            <div class="input-wrap checkbox want-work-anketa__checkbox">
+                <div>
+                    <input class="checkbox" id="proof" name="eighteen" value="1" type="checkbox" checked="" required="" aria-required="true">
+                    <label for="proof">Я согласен на обработку персональных данных и ознакомлен <a href=/about/policy/" class="color_blue">с политикой конфиденциальности</a></label>
+                </div>
+            </div>
 
              <input type="submit" class="btn_large" name="web_form_submit" value="Отправить">
-            <!--<div class="btn_large js__send" data-url="" onclick="events.anketa.finish()">Отправить-->
-            <!--</div>-->
         </div>
     </form>
+
+    <div class="want-work-anketa__text">
+        <div class="thanks text-center">
+            <h1 class="color_blue">Спасибо заполнение анкеты!</h1>
+            <p class="fs_4">Мы рассмотрим её в течение двух рабочих дней.</p>
+        </div>
+    </div>
 </div>
     <script src="ii/js/project_name/script.js" type="text/javascript"></script>
   </body>
